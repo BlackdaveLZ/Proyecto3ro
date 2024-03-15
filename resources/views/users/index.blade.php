@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 
-<h2 class="text-center">Lista Usuarios</h2>
+<h3 class="bg-info text-center">Lista Usuarios</h3>
 <a href="{{ route('users.create') }}" class="btn btn-info">Nuevo Usuario</a>
 <table class="table">
     <tr>

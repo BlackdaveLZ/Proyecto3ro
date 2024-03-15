@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-<h3 class="text-center">Esta es la vista de Cursos</h3>
+<h3 class="bg-info text-center">Esta es la vista de Cursos</h3>
 <a href="{{ route('cursos.create') }}" class="btn btn-info">Nuevo Curso</a>
     
     <table class="table">

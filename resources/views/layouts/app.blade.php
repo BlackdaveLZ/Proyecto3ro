@@ -78,6 +78,10 @@ Bootstrap 5 Dashboard Admin Template
                                     
                                     <a class="nav-link" href="{{ route('users.index') }}">Usuarios</a>
                             </li>
+                            <li class="nav-item">
+                                    
+                                    <a class="nav-link" href="{{ route ('genera_ordenes.index')}}">Generar Ordenes</a>
+                            </li>
 
                            
 
