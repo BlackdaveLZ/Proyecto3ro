@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWF0MmQ5OXQxdjlkcjFieDF0aHVjMzZiMWswM3MxZGk4YXBjenI3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FWZ1MF7W5sYKZ0Ysho/giphy.gif') center center fixed;
-            background-size: cover;
+            background:#330F0A;
             display: flex;
             align-items: center;
             justify-content: center;

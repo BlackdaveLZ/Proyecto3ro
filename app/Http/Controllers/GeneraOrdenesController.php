@@ -30,6 +30,7 @@ class GeneraOrdenesController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**
@@ -74,13 +75,40 @@ class GeneraOrdenesController extends Controller
 
     public function meses(){
         return[
-              '1'=>'Enero',
-              '2'=>'Febrero',
-              '3'=>'Marzo',
-              '4'=>'Abril' ,
+            '1' => 'Enero',
+            '2' => 'Febrero',
+            '3' => 'Marzo',
+            '4' => 'Abril',
+            '5' => 'Mayo',
+            '6' => 'Junio',
+            '7' => 'Julio',
+            '8' => 'Agosto',
+            '9' => 'Septiembre',
+            '10' => 'Octubre',
+            '11' => 'Noviembre',
+            '12' => 'Diciembre'
 
 
 
         ];
+    }
+
+    public function generarOrdenes(Request $rq){
+        // dd('estoy en generar ordenes');
+        $datos=$rq->all();
+
+        $anl_id=$datos['anl_id'];//año lectivo
+        $jor_id=$datos['jor_id'];//jornada
+        $mes=$datos['mes'];//mes
+
+        // dd($datos);
+        $estudiantes=DB::select("SELECT * FROM matriculas m 
+                    JOIN estudiantes e ON m.est_id=e.id
+                    WHERE m.anl_id=$anl_id 
+                    AND jor_id=$jor_id
+                    AND m.mat_estado=1");
+                    dd($estudiantes);
+       
+        
     }
 }
