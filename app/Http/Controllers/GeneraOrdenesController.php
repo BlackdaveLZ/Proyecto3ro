@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use  App\Models\GeneraOrdenes;
 use DB;
 
 
@@ -107,8 +108,24 @@ class GeneraOrdenesController extends Controller
                     WHERE m.anl_id=$anl_id 
                     AND jor_id=$jor_id
                     AND m.mat_estado=1");
-                    dd($estudiantes);
+                    // dd($estudiantes);
+                   
+                    foreach($estudiantes as $e)
+                    {
+                   $input[ 'mat_id']=; 
+                   $input['codigo']=;
+                   $input['fecha_registro']=;
+                   $input['valor_pagar']=;
+                   $input['fecha_pago']=;
+                   $input['valor_pagado']=;
+                   $input['estado']=;
+                   $input['mes']=;
+                   $input['responsable']=;
+                   $input['secuencial']=;
+                   $input['documento']=;  
+                    }
        
+     
         
     }
 }
